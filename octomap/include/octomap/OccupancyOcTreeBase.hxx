@@ -950,7 +950,7 @@ namespace octomap {
 
   template <class NODE>
   std::ostream& OccupancyOcTreeBase<NODE>::writeBinaryData(std::ostream &s) const{
-    OCTOMAP_DEBUG("Writing %zu nodes to output stream...", this->size());
+    OCTOMAP_DEBUG("Writing %zu nodes to output stream...\n", this->size());
     if (this->root)
       this->writeBinaryNode(s, this->root);
     return s;
