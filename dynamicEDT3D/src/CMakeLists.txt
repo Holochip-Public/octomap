@@ -1,5 +1,5 @@
 
-add_library(dynamicedt3d SHARED dynamicEDT3D.cpp)
+add_library(dynamicedt3d STATIC dynamicEDT3D.cpp)
 set_target_properties(dynamicedt3d PROPERTIES
   VERSION ${DYNAMICEDT3D_VERSION}
   SOVERSION ${DYNAMICEDT3D_SOVERSION}

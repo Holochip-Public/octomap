@@ -1,6 +1,6 @@
 add_subdirectory(math)
 
-add_library( octomap SHARED
+add_library( octomap STATIC
         AbstractOcTree.cpp
         AbstractOccupancyOcTree.cpp
         Pointcloud.cpp
